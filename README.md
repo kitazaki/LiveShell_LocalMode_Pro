@@ -69,12 +69,13 @@ https://ultra.starvideo.in/
 
 https://liveshell-manual.cerevo.com/en/liveshell-x/x-2-4/
 
-<img width="1920" height="1080" alt="スクリーンショット 2025-12-30 14 25 21（2）" src="https://github.com/user-attachments/assets/9b699a99-01fe-4a34-b9b1-ebd8cabf4603" />
+<img width="1440" height="878" alt="スクリーンショット 2025-12-30 15 44 40" src="https://github.com/user-attachments/assets/9b4e8826-036d-4042-98e8-80be9011e1ac" />
 
 https://ls-local.cerevo.com/
 
-マニュアルの画面キャプチャ(スクリーンショット)にはLliveShell ProとLiveShell 2のデバイスも選択肢として表示されていたので、一気に期待値が上昇しましたが、残念ながら現在(2025.12.29時点)ではLiveShell Xのみ
+マニュアルの画面キャプチャ(スクリーンショット)にはLliveShell ProとLiveShell 2のデバイスも選択肢として表示されていたので、一気に期待値が上昇しましたが、残念ながら現在(2025.12.29時点)ではLiveShell Xのみになっていました。
 
+<img width="2942" height="1706" alt="スクリーンショット 2025-12-30 15 51 30" src="https://github.com/user-attachments/assets/f9be95b3-b1bb-4f41-9033-b86d5cac85b6" />
 
 ### インターネットアーカイブサイトで過去のサイトコンテンツを発掘
 
@@ -89,6 +90,8 @@ https://web.archive.org/web/20250408014553/https://ls-local.cerevo.com/
 <img width="2944" height="1686" alt="スクリーンショット 2025-12-30 15 51 59" src="https://github.com/user-attachments/assets/7babbac4-1f13-45ff-b21a-8377da5931ae" />
 
 ### 音声ファイルのダウンロード
+
+<img width="2882" height="1314" alt="スクリーンショット 2025-12-30 16 15 25" src="https://github.com/user-attachments/assets/3efec45f-401d-4457-a07f-bfcc6d83464f" />
 
 
 ### デバイスのローカルモード設定
