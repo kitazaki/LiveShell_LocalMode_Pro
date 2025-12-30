@@ -91,15 +91,15 @@ https://web.archive.org/web/20250408014553/https://ls-local.cerevo.com/
 
 ### 音声ファイルのダウンロード
 
-<img width="2882" height="1314" alt="スクリーンショット 2025-12-30 16 15 25" src="https://github.com/user-attachments/assets/3efec45f-401d-4457-a07f-bfcc6d83464f" />
+動作確認したところ、「再生する」ボタンは機能しませんでしたが、「ダウンロード」ボタンは機能して、無事に音声ファイルをダウンロードできました。
 
+<img width="2882" height="1314" alt="スクリーンショット 2025-12-30 16 15 25" src="https://github.com/user-attachments/assets/3efec45f-401d-4457-a07f-bfcc6d83464f" />
 
 ### デバイスのローカルモード設定
 
-最初にデバイスをオフラインモードに設定変更する必要があります。
+音声ファイルを再生する前に、最初にデバイスをオフラインモードに設定変更する必要があります。
 
 ![offline](https://github.com/user-attachments/assets/7410d4f9-5ac9-4f4c-986a-7b1b197c636a)
-
 
 ダウンロードした音声ファイルを再生して、パソコン(ヘッドフォン端子)からデバイス(マイク入力端子)へ音声を流し込みます。
 成功すると画面が切り替わります。
@@ -111,7 +111,6 @@ URLはrtsp://192.168.3.16/liveの形式(デバイスのディスプレイに表�
 
 ![RTSP](https://github.com/user-attachments/assets/9fe4f1e9-b827-4c85-a793-e698f6bdb45a)
 
-
 ![IMG_0951](https://github.com/user-attachments/assets/e8209475-b68c-4add-9dad-151dd59f0536)
 
 #### RTMPモード
@@ -121,9 +120,29 @@ YouTubeLiveで動作確認しました。
 
 ![RTMP](https://github.com/user-attachments/assets/ac4a8951-5c2f-4ef6-8a0d-ef311b6e1fdc)
 
-
 ![YouTubeLive](https://github.com/user-attachments/assets/145e1c08-3b4c-4e8b-9ec1-c432e3a531c6)
 
+## コンテンツの保存と再利用
+
+インターネットアーカイブサイトの過去コンテンツが動作することがわかったので、必要なファイルを保存していきました。
+
+```file
+index.html
+*.css
+*.js
+*.png
+```
+
+最初、fileから直接ブラウザで表示したところコンテンツが正常に動作しなかったので、ローカルでウェブサーバを立ち上げて確認しました。
+
+```bash
+$ python3 -m http.server 8000
+```
+
+ChatGPTでコンテンツを解析させたところ、webpackでビルドされたReact系アプリのminify済みバンドル、ということがわかりました。
+静的コンテンツで動作しますが、CORSエラーになるのでウェブサーバを立ち上げる必要があります。
+また、jsファイルの中身を解析させたところ、webpackのpublicPathが「/」固定で、追加チャンクを「/static/js/...」を撮りに行くよう設計になっているため、コンテンツの配置が重要です。
+(コンテンツの配置を間違えると空白ページが表示される動作でした)
 
 
 ## さいごに
