@@ -1,0 +1,5 @@
+[ETHER]
+IP=192.168.3.40;192.168.3.1;255.255.255.0
+DNS=192.168.3.1
+[LOCAL]
+LIVE={"type":0,"rtmp":{"onetime":false,"url":"rtmp://a.rtmp.youtube.com app=live2 playPath=xxxx-xxxx-xxxx-xxxx-xxxx flashver=FME/3.0\\\\20(compatible;\\\\20FMSc/1.0)"}}
